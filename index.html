@@ -1,0 +1,54 @@
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ACT VII - Rush & Ready</title>
+        <link href="site-style.css" rel="stylesheet">
+        <link href="game-style.css" rel="stylesheet">
+        <script defer src="script.js"></script>
+    </head>
+
+    <body>
+        <div class="overlay start-screen" id="start-screen">
+            <span class="start-title">Ready to start the show?</span>
+            <span class="start-header">Click the ticket to start the game!</span>
+            <div class="full-ticket" id="start-button">
+                <button class="left-ticket-btn"><img src="ASSETS/START/left-ticket.png" class="left-ticket-img" id="left-ticket-img"></button>
+                <button class="right-ticket-btn"><img src="ASSETS/START/right-ticket.png" class="right-ticket-img" id="right-ticket-img"></button>
+            </div>
+        </div>
+
+        <div class="header" id="header">
+            <button class="left-header-btn header-btn" id="back-header-btn"><img id="back-btn-img" class="header-btn-img" src="ASSETS/HEADER/back.png"></button>
+            <button class="right-header-btn header-btn" id="mute-header-btn"><img id="mute-btn-img" class="header-btn-img" src="ASSETS/HEADER/unmute.png"></button>
+        </div>
+
+        <div class="game-board" id="game-board">
+            <span class="instructions" id="instructions"> Select all the items that are essential in your Emergency Kit!</span>
+
+            <div class="button-grid">
+                <button class="output-btn output1" id="item1"><img class="image" id="output1" src="ASSETS/ITEMS/battery-default.png"></button>
+                <button class="output-btn output2" id="item2"><img class="image" id="output2" src="ASSETS/ITEMS/ball-default.png"></button>
+                <button class="output-btn output3" id="item3"><img class="image" id="output3" src="ASSETS/ITEMS/flashlight-default.png"></button>
+                <button class="output-btn output4" id="item4"><img class="image" id="output4" src="ASSETS/ITEMS/hat-default.png"></button>
+                <button class="output-btn output5" id="item5"><img class="image" id="output5" src="ASSETS/ITEMS/medkit-default.png"></button>
+                <button class="output-btn output6" id="item6"><img class="image" id="output6" src="ASSETS/ITEMS/water-default.png"></button>
+                <button class="output-btn output7" id="item7"><img class="image" id="output7" src="ASSETS/ITEMS/whistle-default.png"></button>
+                <button class="output-btn output8" id="item8"><img class="image" id="output8" src="ASSETS/ITEMS/shirt-default.png"></button>
+                <button class="output-btn output9" id="item9"><img class="image" id="output9" src="ASSETS/ITEMS/plant-default.png"></button>
+            </div>
+
+            <button class="submit-btn" id="submit-btn" onclick="submitAnswer()"><img class="submit-btn-img" src="ASSETS/submit-btn.png"></button>
+        </div>
+
+        <div class="overlay end-screen" id="end-screen">
+            <img src="ASSETS/token.png" class="token-img">
+            <div class="end-message">Congratulations! You have earned the</div>
+            <div class="end-title"> SAFE SHOWMAN BADGE!</div>
+            <div class="end-message"> The secret code for the next Act is <b>ALERTNESS!</b> The show has ended and you can click the button below to head back to the tent!</div>
+            <a href="https://interaktiv.benilde.edu.ph/?page_id=12809"><button class="menu-btn" id="menu-btn"><img class="menu-btn-img" src="ASSETS/menu-btn.png"></button></a>
+        </div>
+    </body>
+
+</html>
